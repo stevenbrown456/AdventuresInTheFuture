@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour {
     public string horizontalAxis = "Horizontal";
 
     public SpriteRenderer playerSprite;
+    public Animator playerAnimator;
     public Collider2D playerCollider;
 
 
@@ -37,8 +38,22 @@ public class PlayerMovement : MonoBehaviour {
         // Give the velocity to the rigidbody
         physicsBody.velocity = velocity;
 
-        
-       }
+        // Tell the animator our speed
+        playerAnimator.SetFloat("walk", Mathf.Abs(velocity.x));
+
+        // Flip our sprite if we're moving backward
+        if (velocity.x < 0)
+        {
+            playerSprite.flipX = true;
+        }
+        else
+        {
+            playerSprite.flipX = false;
+        }
+
+    }
+
+    
     
     void Jump()
     {
