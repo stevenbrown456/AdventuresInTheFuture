@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour {
     public SpriteRenderer playerSprite;
     public Animator playerAnimator;
     public Collider2D playerCollider;
+    private GameMaster GM;
 
 
     // Use this for initialization
@@ -51,6 +52,8 @@ public class PlayerMovement : MonoBehaviour {
             playerSprite.flipX = false;
         }
 
+        GM = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>(); 
+
     }
 
     
@@ -62,5 +65,12 @@ public class PlayerMovement : MonoBehaviour {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 5f), ForceMode2D.Impulse);
         }
 
+    }
+
+
+      void OnTriggerEnter2D(Collider2D col)
+    {
+        Destroy(col.gameObject);
+        GM.points = +1;
     }
 }
