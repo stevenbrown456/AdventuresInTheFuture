@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
     //These are the desinger variables
     public float speed = 10;
     public float jumpSpeed = 10;
@@ -12,16 +13,18 @@ public class PlayerMovement : MonoBehaviour {
     public SpriteRenderer playerSprite;
     public Animator playerAnimator;
     public Collider2D playerCollider;
-    private GameMaster GM;
+
 
 
     // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         Jump();
         // Get axis input from Unity
         float leftRight = Input.GetAxis(horizontalAxis);
@@ -52,12 +55,12 @@ public class PlayerMovement : MonoBehaviour {
             playerSprite.flipX = false;
         }
 
-        GM = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>(); 
+
 
     }
 
-    
-    
+
+
     void Jump()
     {
         if (Input.GetButtonDown("Jump"))
@@ -66,11 +69,7 @@ public class PlayerMovement : MonoBehaviour {
         }
 
     }
+} 
+    
 
-
-      void OnTriggerEnter2D(Collider2D col)
-    {
-        Destroy(col.gameObject);
-        GM.points = +1;
-    }
-}
+      
