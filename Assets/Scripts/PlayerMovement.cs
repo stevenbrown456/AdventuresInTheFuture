@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public SpriteRenderer playerSprite;
     public Animator playerAnimator;
     public Collider2D playerCollider;
+    public Lives livesObject;
 
 
 
@@ -55,9 +57,40 @@ public class PlayerMovement : MonoBehaviour
             playerSprite.flipX = false;
         }
 
+        
+        }
 
+    public void Kill()
+    {
+        // Take away a life and save that change
+        livesObject.LoseLife();
+        livesObject.SaveLives();
+
+        // Check if it's game over
+        bool gameOver = livesObject.IsGameOver();
+
+        if (gameOver == true)
+        {
+            // If it IS game over....
+            // Load the game over scene
+            SceneManager.LoadScene("GameOver");
+        }
+        else
+        {
+            // If it is NOT game over....
+            // Reset the current level to restart from the beginning.
+
+            // First, ask unity what the current level is
+            Scene currentLevel = SceneManager.GetActiveScene();
+
+            // Second, tell unity to load the current again
+            // by passing the build index of our level
+            SceneManager.LoadScene(currentLevel.buildIndex);
+
+        }
 
     }
+
 
 
 
