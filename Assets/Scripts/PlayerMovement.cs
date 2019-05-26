@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator playerAnimator;
     public Collider2D playerCollider;
     public Lives livesObject;
+    public Score scoresObject;
 
 
 
