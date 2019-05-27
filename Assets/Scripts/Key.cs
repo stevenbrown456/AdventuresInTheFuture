@@ -9,6 +9,7 @@ public class Key : MonoBehaviour {
 
 	public void DoInteraction()
     {
+        //picked up and put in inventory
         gameObject.SetActive(false);
     }
 

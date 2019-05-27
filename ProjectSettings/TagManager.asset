@@ -7,6 +7,7 @@ TagManager:
   - Gem
   - GameMaster
   - Ground
+  - interObject
   layers:
   - Default
   - TransparentFX

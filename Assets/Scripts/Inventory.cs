@@ -18,6 +18,8 @@ public class Inventory : MonoBehaviour {
                 inventory[i] = item;
                 Debug.Log(item.name + "was added");
                 itemAdded = true;
+                //do something  with the object
+                item.SendMessage("DoInteraction");
                 break;
             }
         }

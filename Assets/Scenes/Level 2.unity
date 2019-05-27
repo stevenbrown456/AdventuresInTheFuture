@@ -485,7 +485,7 @@ GameObject:
   - component: {fileID: 1288087029}
   m_Layer: 9
   m_Name: Key
-  m_TagString: Untagged
+  m_TagString: interObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -558,7 +558,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -738,6 +738,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1647179274}
   - component: {fileID: 1647179273}
+  - component: {fileID: 1647179276}
   - component: {fileID: 1647179275}
   - component: {fileID: 1647179272}
   - component: {fileID: 1647179271}
@@ -906,6 +907,20 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &1647179276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1647179268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63eefb0b4771b894494256b95c9fb2fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentInterObj: {fileID: 0}
+  currentInterObjScript: {fileID: 0}
+  inventory: {fileID: 1647179275}
 --- !u!1 &1765877225
 GameObject:
   m_ObjectHideFlags: 0
