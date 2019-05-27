@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     //These are the desinger variables
     public float speed = 10;
     public float jumpSpeed = 10;
+    public bool isGrounded = false;
     public Rigidbody2D physicsBody;
     public string horizontalAxis = "Horizontal";
 
@@ -97,13 +98,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetButtonDown("Jump"))
-        {
+        if (Input.GetButtonDown("Jump") 
+       ) 
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 5f), ForceMode2D.Impulse);
         }
 
     }
-} 
+
     
 
       
