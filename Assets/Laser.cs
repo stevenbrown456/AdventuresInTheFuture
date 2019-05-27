@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Laser : MonoBehaviour {
+
     public float speed = 20f;
+    public int damage = 100;
     public Rigidbody2D rb;
 
 	// Use this for initialization
@@ -12,7 +14,11 @@ public class Laser : MonoBehaviour {
 	}
      void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        Debug.Log(hitInfo);
+        Enemy enemy = hitInfo.GetComponent<Enemy>();
+        if (enemy != null)
+        {
+            enemy.TakeDamage(damage);
+        }
         Destroy(gameObject);
     }
 
