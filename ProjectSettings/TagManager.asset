@@ -20,7 +20,7 @@ TagManager:
   - Tiles
   - Background
   - Player&Score
-  - Button
+  - 
   - 
   - 
   - 
@@ -48,12 +48,9 @@ TagManager:
   - name: Player&Score
     uniqueID: 1186619093
     locked: 0
-  - name: Background
-    uniqueID: 2421323371
-    locked: 0
   - name: Tiles
     uniqueID: 2675286431
     locked: 0
-  - name: Button
-    uniqueID: 1341285049
+  - name: Background
+    uniqueID: 2421323371
     locked: 0

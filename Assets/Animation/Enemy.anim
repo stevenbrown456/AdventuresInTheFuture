@@ -19,11 +19,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-<<<<<<< HEAD
         value: {x: -0.74, y: -0.13, z: -0.125}
-=======
-        value: {x: -11.014688, y: -1.649235, z: 0.05664063}
->>>>>>> 390ece9234d3eaa4a0b38e047b4ced90417d5a7d
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -32,11 +28,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 1
-<<<<<<< HEAD
         value: {x: 8.95, y: -0.13, z: -0.125}
-=======
-        value: {x: -1.38, y: -1.6492352, z: 0.056640625}
->>>>>>> 390ece9234d3eaa4a0b38e047b4ced90417d5a7d
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -45,11 +37,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 2
-<<<<<<< HEAD
         value: {x: -0.74, y: -0.13, z: -0.125}
-=======
-        value: {x: -11.014688, y: -1.649235, z: 0.05664063}
->>>>>>> 390ece9234d3eaa4a0b38e047b4ced90417d5a7d
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -96,11 +84,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_FlipX
-<<<<<<< HEAD
     path: Enemy_1
-=======
-    path: 
->>>>>>> 390ece9234d3eaa4a0b38e047b4ced90417d5a7d
     classID: 212
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -119,11 +103,7 @@ AnimationClip:
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-<<<<<<< HEAD
       path: 383921687
-=======
-      path: 0
->>>>>>> 390ece9234d3eaa4a0b38e047b4ced90417d5a7d
       attribute: 555744692
       script: {fileID: 0}
       typeID: 212
@@ -156,11 +136,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-<<<<<<< HEAD
         value: -0.74
-=======
-        value: -11.014688
->>>>>>> 390ece9234d3eaa4a0b38e047b4ced90417d5a7d
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -169,11 +145,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-<<<<<<< HEAD
         value: 8.95
-=======
-        value: -1.38
->>>>>>> 390ece9234d3eaa4a0b38e047b4ced90417d5a7d
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -182,11 +154,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 2
-<<<<<<< HEAD
         value: -0.74
-=======
-        value: -11.014688
->>>>>>> 390ece9234d3eaa4a0b38e047b4ced90417d5a7d
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -205,11 +173,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-<<<<<<< HEAD
         value: -0.13
-=======
-        value: -1.649235
->>>>>>> 390ece9234d3eaa4a0b38e047b4ced90417d5a7d
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -218,11 +182,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-<<<<<<< HEAD
         value: -0.13
-=======
-        value: -1.6492352
->>>>>>> 390ece9234d3eaa4a0b38e047b4ced90417d5a7d
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -231,11 +191,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 2
-<<<<<<< HEAD
         value: -0.13
-=======
-        value: -1.649235
->>>>>>> 390ece9234d3eaa4a0b38e047b4ced90417d5a7d
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -254,11 +210,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-<<<<<<< HEAD
         value: -0.125
-=======
-        value: 0.05664063
->>>>>>> 390ece9234d3eaa4a0b38e047b4ced90417d5a7d
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -267,11 +219,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-<<<<<<< HEAD
         value: -0.125
-=======
-        value: 0.056640625
->>>>>>> 390ece9234d3eaa4a0b38e047b4ced90417d5a7d
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -280,11 +228,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 2
-<<<<<<< HEAD
         value: -0.125
-=======
-        value: 0.05664063
->>>>>>> 390ece9234d3eaa4a0b38e047b4ced90417d5a7d
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -332,11 +276,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_FlipX
-<<<<<<< HEAD
     path: Enemy_1
-=======
-    path: 
->>>>>>> 390ece9234d3eaa4a0b38e047b4ced90417d5a7d
     classID: 212
     script: {fileID: 0}
   m_EulerEditorCurves: []
