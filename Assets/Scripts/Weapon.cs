@@ -6,23 +6,24 @@ public class Weapon : MonoBehaviour {
 
     public Transform firePoint;
     public GameObject laserPrefab;
-	
-	// Update is called once per frame
-	void Update () {
-<<<<<<< HEAD
-		if (Input.GetButtonDown("Fire1"))
-        {
-=======
+
+    // Update is called once per frame
+    void Update() {
+
         if (Input.GetButtonDown("Fire1"))
         {
 
->>>>>>> 390ece9234d3eaa4a0b38e047b4ced90417d5a7d
-            Shoot();
+            if (Input.GetButtonDown("Fire1"))
+            {
+
+
+                Shoot();
+            }
         }
-	}
-    void Shoot()
-    {
-        //shooting logic
-        Instantiate(laserPrefab, firePoint.position, firePoint.rotation);
+        void Shoot()
+        {
+            //shooting logic
+            Instantiate(laserPrefab, firePoint.position, firePoint.rotation);
+        }
     }
 }
