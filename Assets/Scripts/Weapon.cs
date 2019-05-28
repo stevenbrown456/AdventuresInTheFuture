@@ -9,8 +9,14 @@ public class Weapon : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+<<<<<<< HEAD
 		if (Input.GetButtonDown("Fire1"))
         {
+=======
+        if (Input.GetButtonDown("Fire1"))
+        {
+
+>>>>>>> 390ece9234d3eaa4a0b38e047b4ced90417d5a7d
             Shoot();
         }
 	}
