@@ -4,14 +4,22 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour {
 
+
     public Transform firePoint;
     public GameObject laserPrefab;
-	
-	// Update is called once per frame
-	void Update () {
+    private AudioSource audioSource;
+    // Update is called once per frame
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    void Update () {
 		if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
+            audioSource.Play();
         }
 	}
     void Shoot()
