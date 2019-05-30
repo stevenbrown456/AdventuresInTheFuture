@@ -25,7 +25,7 @@ public class Lives : MonoBehaviour
 
     public void LoseLife()
     {
-        numericalLives = numericalLives - 1;
+        numericalLives = numericalLives -1;
         livesText.text = numericalLives.ToString();
     }
 
