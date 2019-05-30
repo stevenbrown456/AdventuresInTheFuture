@@ -27,10 +27,10 @@ public class Gem : MonoBehaviour
 
     // Unity calls this function when our coin touches any other object
     // coin should disappear when player colides
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         // Check if the thing we touched was the Player
-        PlayerMovement playerScript = collision.collider.GetComponent<PlayerMovement>();
+        PlayerMovement playerScript = collision.GetComponent<PlayerMovement>();
 
 
         if (playerScript)

@@ -9,6 +9,11 @@ public class MainMenu : MonoBehaviour{
     public void PlayGame ()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        // Reset the score
+        PlayerPrefs.DeleteKey("score");
+
+        // Reset the lives
+        PlayerPrefs.DeleteKey("lives");
 
 
     }
