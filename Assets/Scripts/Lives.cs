@@ -23,6 +23,7 @@ public class Lives : MonoBehaviour
 
     }
 
+    //when the player is hit by enemy he loses 1 life
     public void LoseLife()
     {
         numericalLives = numericalLives -1;

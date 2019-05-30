@@ -14,7 +14,7 @@ public class Weapon : MonoBehaviour {
     {
         audioSource = GetComponent<AudioSource>();
     }
-
+    //when key is pressed weapon fires
     void Update () {
 		if (Input.GetButtonDown("Fire1"))
         {

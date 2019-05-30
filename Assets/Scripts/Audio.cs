@@ -15,6 +15,7 @@ public class Audio : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //if key is pressed sound effect will play
         if (Input.GetKeyDown(KeyCode.Space))
             MusicSource.Play();
 		

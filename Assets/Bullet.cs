@@ -13,8 +13,10 @@ public class Bullet : MonoBehaviour {
         rb.velocity = transform.right * speed;
 		
 	}
+    //when trigger is pressed the bullet will fire
      void OnTriggerEnter2D(Collider2D hitInfo)
     {
+        //this make sure the the bullet detects an object, if object is enemy it will destroy enemy
        Enemy enemy = hitInfo.GetComponent<Enemy>();
         Destroy(gameObject);
         if (enemy != null)
