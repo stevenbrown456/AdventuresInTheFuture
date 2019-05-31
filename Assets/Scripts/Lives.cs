@@ -34,7 +34,7 @@ public class Lives : MonoBehaviour
     {
         PlayerPrefs.SetInt("lives", numericalLives);
     }
-
+    //when the game is over lives reset 
     public bool IsGameOver()
     {
         if (numericalLives <= 0)
